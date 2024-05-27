@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --bgColorPage: #FFFFFF;
+    --colorText: #000000;
+    --colorBorder: #000000;
+    --bgColorBottom: #000000;
+    --colorTextBottom: #FFFFFF;
+    --bgColorCard: #F3F3F3;
+    --bgColorResearchers: #B9FF66;
+    --bgColorReseachersCard: #191A23;
+    --colorTextCase: #ffffff;
+    --colorLinkCase: #B9FF66;
+    --colorBorderLineCase: #ffffff;
+}
+
+/* --------------------------------------------- */
+
+.page {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--colorText);
+    margin-inline: auto;
+    width: 1440px;
+    max-width: 100%;
+    background-color: var(--bgColorPage);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 751px 394px 1fr;
+    row-gap: 140px;
+    padding-inline: 100px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: 68px 1fr 48px;
+    row-gap: 60px;
+}
+
+.heroHeader {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    column-gap: 241px;
+}
+
+.headerLogo {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.headerNavigation {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.textArgument {
+    font-size: 1.25rem;
+    font-weight: 200;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.textArgument:hover {
+    transform: scale(1.2);
+}
+
+.textBottom {
+    padding-inline: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid var(--colorBorder);
+    border-radius: 14px;
+}
+
+.heroContent {
+    display: grid;
+    grid-template-columns: 640px 1fr;
+
+}
+
+.contentInfo {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    display: grid;
+    grid-template-rows: 186px 1fr 68px;
+    row-gap: 35px;
+}
+
+.textHeaderArgument {
+    font-size: 3.375rem;
+    font-weight: 300;
+    line-height: 115%;
+}
+
+.infoHero {
+    width: 536px;
+    margin-right: 104px;
+}
+
+.textInfoArgument {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.infoBottom {
+    width: 356px;
+    background-color: var(--bgColorBottom);
+    border-radius: 14px;
+    padding-inline: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.infoBottomText {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--colorTextBottom);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.infoBottomText:hover {
+    transform: scale(1.1);
+}
+
+.heroFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 95.91px;
+}
+
+.imageArgument {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%); 
+}
+
+.imageArgument:hover {
+    transform: scale(1.2);
+}
+
+/* ----------------cta-------------------------- */
+
+.ctaHero {
+    display: grid;
+    grid-template-columns: 1240px 1fr;
+}
+
+.heroCard {
+    margin-top: 23.5px;
+    margin-bottom: 23.5px;
+    background-color: var(--bgColorCard);
+    border-radius: 45px;
+    display: grid;
+}
+
+.cardInfo {
+    display: grid;
+    grid-template-rows: 38px 1fr 68px;
+    row-gap: 26px;
+    width: 500px;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    margin-left: 60px;
+}
+
+.cardTextHeaderArgument {
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+.carTextArgument {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+.cardBottom {
+    background-color: var(--bgColorBottom);
+    border-radius: 14px;
+    padding-inline: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:423px
+}
+
+.heroImage {
+    margin-left: -490px;
+}
+
+/* ----------------reseachers-------------------------- */
+
+.reseachers {
+    display: grid;
+    grid-template-rows: 51px 1fr;
+    row-gap: 60px;
+}
+
+.reseachersHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.headerName {
+    border-radius: 7px;
+    background-color: var(--bgColorResearchers);
+}
+
+.nameArgument {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.headerText {
+    width: 630px
+}
+
+.reseachersTextArgument {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+.reseachersHero {
+    height: 338px;
+    border-radius: 45px;
+    background-color: var(--bgColorReseachersCard);
+}
+
+.reseachersContent {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    column-gap: 64px;
+    padding-inline: 60px;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.contentCaseOne {
+    display: grid;
+    grid-template-rows: 100px 28px;
+    row-gap: 20px;
+}
+
+.caseLink {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.caseText {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 140%;
+    color: var(--colorTextCase);
+}
+
+.linkText {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--colorLinkCase);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.linkText:hover {
+    text-decoration: underline;
+}
+
+.caseIcon {
+    width: 21px;
+    height: 25px;
+}
+
+.contentLine {
+    height: 198px;
+    border: 1px solid var(--colorBorderLineCase);
+}
+
+.contentCaseTwo {
+    display: grid;
+    grid-template-rows: 150 28px;
+    row-gap: 20px;
+}
+
+.contentCaseThree {
+    display: grid;
+    grid-template-rows: 150 28px;
+    row-gap: 20px;
+}
